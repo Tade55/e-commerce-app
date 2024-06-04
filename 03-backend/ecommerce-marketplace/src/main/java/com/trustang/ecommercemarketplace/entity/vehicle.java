@@ -7,7 +7,7 @@ import jakarta.persistence.*;
 @Table(name="vehicle")
 @Data
 
-public class vehicle {
+public class Vehicle {
 	@Id
 	@GeneratedValue(strategy=GenerationType.IDENTITY)
 	@Column(name="id")
@@ -42,8 +42,9 @@ public class vehicle {
 	@Column(name="gear_type")
 	private String gearType;
 	
-	@Column(name="engine_type")
-	private String engineType;
+	
+	@Column(name="engine_size")
+	private String engineSize;
 	
 	@Column(name="category")
 	private String category;
@@ -140,13 +141,13 @@ public class vehicle {
 	public void setGearType(String gearType) {
 		this.gearType = gearType;
 	}
-
-	public String getEngineType() {
-		return engineType;
+	
+	public String getEngineSize() {
+		return engineSize;
 	}
 
-	public void setEngineType(String engineType) {
-		this.engineType = engineType;
+	public void setEngineSize(String engineSize) {
+		this.engineSize = engineSize;
 	}
 
 	public String getCategory() {

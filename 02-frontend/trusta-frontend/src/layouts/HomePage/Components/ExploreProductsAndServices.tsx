@@ -1,3 +1,4 @@
+import { PopularAds } from "./PopularAds";
 
 
 export const ExploreProductsAndServices=()=>{
@@ -282,6 +283,11 @@ export const ExploreProductsAndServices=()=>{
                 </li>
                 <li>
                   <a className="dropdown-item" href="#">
+                    Logistics
+                  </a>
+                </li>
+                <li>
+                  <a className="dropdown-item" href="#">
                     Cleaning
                   </a>
                 </li>
@@ -345,54 +351,9 @@ export const ExploreProductsAndServices=()=>{
   
 </div>
   </div>
-    <div className="col-sm-9">
-    <div><h1 className="fs-6">Popular Ads</h1></div>
-      <div className="row row-cols-4 gy-3">
-        <div className="col">
-        <img src={require('./../../../Images/Working pictures/book-luv2code-1000.png')}
-                width='150'
-                height='150'/>
-        </div>
-        <div className="col">
-        <img src={require('./../../../Images/Working pictures/book-luv2code-1000.png')}
-                width='150'
-                height='150'/>
-        </div>
-        <div className="col">
-        <img src={require('./../../../Images/Working pictures/book-luv2code-1000.png')}
-                width='150'
-                height='150'/>
-        </div>
-        <div className="col">
-        <img src={require('./../../../Images/Working pictures/book-luv2code-1000.png')}
-                width='150'
-                height='150'/>
-        </div>
-        <div className="col">
-        <img src={require('./../../../Images/Working pictures/book-luv2code-1000.png')}
-                width='150'
-                height='150'/>
-        </div>
-        <div className="col">
-        <img src={require('./../../../Images/Working pictures/book-luv2code-1000.png')}
-                width='150'
-                height='150'/>
-        </div>
-        <div className="col">
-        <img src={require('./../../../Images/Working pictures/book-luv2code-1000.png')}
-                width='150'
-                height='150'/>
-        </div>
-        <div className="col">
-        <img src={require('./../../../Images/Working pictures/book-luv2code-1000.png')}
-                width='150'
-                height='150'/>
-        </div>
-      </div>
+    <PopularAds/>
     </div>
-  </div>
 </div>
-
-       </div>
+</div>
     );
 }
