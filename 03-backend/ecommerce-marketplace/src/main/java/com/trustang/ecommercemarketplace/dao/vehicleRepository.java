@@ -8,6 +8,6 @@ import org.springframework.web.bind.annotation.RequestParam;
 
 import com.trustang.ecommercemarketplace.entity.Vehicle;
 
-public interface vehicleRepository extends JpaRepository<Vehicle, Long> {
+public interface VehicleRepository extends JpaRepository<Vehicle, Long> {
 	Page<Vehicle> findByPromoted(@RequestParam("promoted") String promoted, Pageable pageable);
 }
